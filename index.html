@@ -305,7 +305,7 @@
     <div class="tab-content active" id="tab-practice">
         <!-- 2025 -->
         <div class="year-section">
-            <div class="year-label">CURRENT AFFAIRS 2025</div>
+            <div class="year-label">SUBJECTS</div>
             <div class="sets-grid" id="grid-2025"></div>
         </div>
         <!-- 2026 -->
@@ -395,8 +395,8 @@
 // DATA STRUCTURE
 // CA_DATA[year][month] = raw question string
 // =====================================================
-const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-const YEARS = ["2025", "2026"];
+const MONTHS = ["History","Polity","Geography","Economics","Physics","Chemistry","Biology","Computer","Environment","Static"];
+const YEARS = ["NTPC", "SSC"];
 
 // Placeholder raw data - admin fills this in
 const CA_DATA = {};
@@ -411,7 +411,7 @@ YEARS.forEach(y => {
 // =====================================================
 // ADD YOUR QUESTIONS BELOW IN THIS FORMAT:
 // =====================================================
-// CA_DATA["2025"]["January"] = `
+// CA_DATA["NTPC"]["HISTORY"] = `
 // Q.1
 // Your question text here?
 // A. Option A
@@ -424,41 +424,38 @@ YEARS.forEach(y => {
 // `;
 // =====================================================
 
-// SAMPLE DATA – January 2025 (Delete and replace with real questions)
-CA_DATA["2025"]["January"] = ` `
+// SAMPLE DATA – HISTORY NTPC (Delete and replace with real questions)
+CA_DATA["NTPC"]["History"] = ` `
 
-CA_DATA["2025"]["February"] = ` `
-CA_DATA["2025"]["March"] = ``
-CA_DATA["2025"]["April"] = ``
-CA_DATA["2025"]["May"] = ` `
-CA_DATA["2025"]["June"] = ` `
-CA_DATA["2025"]["July"] = ``
-CA_DATA["2025"]["August"] = ``
-CA_DATA["2025"]["September"] = ``
-CA_DATA["2025"]["October"] = ``
-CA_DATA["2025"]["November"] = ``
-CA_DATA["2025"]["December"] = ``
+CA_DATA["NTPC"]["Polity"] = ` `
+CA_DATA["NTPC"]["Geography"] = ``
+CA_DATA["NTPC"]["Economics"] = ``
+CA_DATA["NTPC"]["Physics"] = ` `
+CA_DATA["NTPC"]["Chemistry"] = ` `
+CA_DATA["NTPC"]["Biology"] = ``
+CA_DATA["NTPC"]["Computer"] = ``
+CA_DATA["NTPC"]["Environment"] = ``
+CA_DATA["NTPC"]["Static"] = ``
+CA_DATA["SSC"]["History"] = ``
+CA_DATA["SSC"]["Polity"] = ``
   
-CA_DATA["2026"]["January"] = ``
+CA_DATA["SSC"]["Geography"] = ``
   
-CA_DATA["2026"]["February"] = ``
+CA_DATA["SSC"]["Economics"] = ``
   
-CA_DATA["2026"]["March"] = ``
-CA_DATA["2026"]["April"] = ``
-CA_DATA["2026"]["May"] = ``
-CA_DATA["2026"]["June"] = ``
-CA_DATA["2026"]["July"] = ``
-CA_DATA["2026"]["August"] = ``
-CA_DATA["2026"]["September"] = ``
-CA_DATA["2026"]["October"] = ``
-CA_DATA["2026"]["November"] = ``
-CA_DATA["2026"]["December"] = ``
+CA_DATA["SSC"]["Physics"] = ``
+CA_DATA["SSC"]["Chemistry"] = ``
+CA_DATA["SSC"]["Biology"] = ``
+CA_DATA["SSC"]["Computer"] = ``
+CA_DATA["SSC"]["Environment"] = ``
+CA_DATA["SSC"]["Static"] = ``
+
 ;
 
 // =====================================================
 // ORIGINAL FORMAT REFERENCE
 // =====================================================
-// CA_DATA["2025"]["January"] = `
+// CA_DATA["NTPC"]["HISTORY"] = `
 // Q.1
 // Which country hosted the G20 Summit in January 2025?
 // A. India
